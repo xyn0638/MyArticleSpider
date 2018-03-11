@@ -83,4 +83,5 @@ class JobboleSpider(scrapy.Spider):
         item_loader.add_value("url_object_id", get_md5(response.url))
 
         article_item = item_loader.load_item()
+		
         yield article_item
